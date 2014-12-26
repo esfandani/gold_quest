@@ -30,7 +30,7 @@ public class MiniTest {
 			int temp =  pop_inv + income_pop;
 			if(temp > total_population){
 				double remaining = (total_population - pop_inv);
-				outcome_pop = (int) ((outcome_pop/tnis)*remaining);
+				outcome_pop = (int) (((double)outcome_pop/tnis)*remaining);
 				break;
 			}
 			pop_inv= temp;
@@ -42,7 +42,7 @@ public class MiniTest {
 		}
 		total_happy_pop+=outcome_pop;
 		System.out.println("happy people:"+total_happy_pop);
-		System.out.println("month:"+iteration);
+		System.out.println("month:"+(iteration-1));
 	}
 
 }
